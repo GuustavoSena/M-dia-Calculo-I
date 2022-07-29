@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap"
+        rel="stylesheet">
+    <title>Média Calculo I</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="img/logo.png" alt="Logo da USP" class="cabecalho__logo">
+        <h1 class="cabecalho__titulo">Calculo da Média de Calculo I</h1>
+    </header>
+    <main>
+        <section class="container">
+            <h2 class="container__titulo-secundario">Meus Alunos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Notas P0</th>
+                        <th>Notas P1</th>
+                        <th>Notas P2</th>
+                        <th>Média</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-alunos">
+                    <tr class="aluno">
+                        <td class="nome">Gustavo</td>
+                        <td class="nota-P0">6.5</td>
+                        <td class="nota-P1">4</td>
+                        <td class="nota-P2">8</td>
+                        <td class="media">0</td>
+                    </tr>
+                    <tr class="aluno">
+                        <td class="nome">Deivid</td>
+                        <td class="nota-P0">5</td>
+                        <td class="nota-P1">6</td>
+                        <td class="nota-P2">5</td>
+                        <td class="media">0</td>
+                    </tr>
+                    <tr class="aluno">
+                        <td class="nome">Henrique</td>
+                        <td class="nota-P0">10</td>
+                        <td class="nota-P1">7</td>
+                        <td class="nota-P2">8</td>
+                        <td class="media">0</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+        </section>
+
+    </main>
+
+    <section class="container container-secundario">
+        <h2 class='container__titulo-secundario'>Adicionar novo aluno</h2>
+        <ul id="mensagens-erro">
+            <!--Aqui virá as <li>'s. Estas são elementos do array erros-->
+        </ul>
+        <form class="formulario">
+            <div class="nome-form">
+                <label for="nome">Nome:</label>
+                <input name="nome" type="text" id="nome" placeholder="Digite o nome do aluno" class="campo">
+            </div>
+            <div class="campos-medios">
+                <div class="P0-form">
+                    <label for="P0">P0:</label>
+                    <input name="notaP0" type="text" id="P0" placeholder="Digite a nota da P0"
+                        class="campo campo-medio">
+                </div>
+                <div class="P1-form">
+                    <label for="P1">P1:</label>
+                    <input name="notaP1" type="text" id="P1" placeholder="Digite a nota da P1"
+                        class="campo campo-medio">
+                </div>
+                <div class="P2-form">
+                    <label for="P2">P2:</label>
+                    <input name="notaP2" type="text" id="P2" placeholder="Digite a nota da P2"
+                        class="campo campo-medio">
+                </div>
+            </div>
+
+            <button id="adicionar-aluno" class="botao bto-principal">Adicionar</button>
+        </form>
+    </section>
+
+    <script src="js/calcula-media.js"></script>
+    <script src="js/form.js"></script>
+
+
+</body>
+
+</html>
